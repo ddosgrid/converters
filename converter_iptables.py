@@ -55,7 +55,7 @@ def find_ips(args):
 
     openfile=open(args.fingerprint)
     jsondata=json.load(openfile)
-    data = jsondata['src_ips']
+    data = jsondata['attackers']
     df=pd.DataFrame(data,columns=['ip'])
     openfile.close()
     
